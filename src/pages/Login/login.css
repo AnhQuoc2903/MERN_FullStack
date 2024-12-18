@@ -1,0 +1,114 @@
+/* Tổng quát */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #74ebd5;
+  box-shadow: 0 0 8px rgba(116, 235, 213, 0.2);
+  outline: none;
+}
+
+/* Button */
+button {
+  background: #74ebd5;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #62d1c0;
+}
+
+.loading-message,
+.error-message,
+.success-message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loading-message {
+  background: #fff5e5;
+  color: #cc8f00;
+}
+
+.error-message {
+  background: #ffe6e6;
+  color: #d9534f;
+}
+
+.success-message {
+  background: #e5f8e5;
+  color: #5cb85c;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px 20px;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
